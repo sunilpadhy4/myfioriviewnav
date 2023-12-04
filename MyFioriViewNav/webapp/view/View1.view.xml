@@ -1,0 +1,28 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="oft.fiori.controller.View1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="View 1">
+		<headerContent>
+			<Button icon="sap-icon://action" press="onNext"></Button>
+		</headerContent>
+		<content>
+			<Button id="oBtnFilter" text="Filter" icon="sap-icon://filter" press="onFilter"></Button>
+			<!--<Button icon="sap-icon://paper-plane" text="go to second view" press="onNext"></Button>-->
+			<SearchField search="onSearch" liveChange="onSearch"></SearchField>
+		
+			<List id="fruits" items="{/fruits}" itemPress="onItemPress">
+				<ObjectListItem type="Navigation" intro="{benefit}" title="{name}" number="{price}" numberUnit="{unit}" icon="{photo}" >
+					<attributes>
+						<ObjectAttribute title="Type" text="{type}"></ObjectAttribute>
+						<ObjectAttribute title="Color" text="{color}"></ObjectAttribute>
+					    <ObjectAttribute title="Availability" text="{availability}"></ObjectAttribute>
+					</attributes>
+				</ObjectListItem>
+			</List>
+		</content>
+		<footer>
+			<Toolbar>
+				
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

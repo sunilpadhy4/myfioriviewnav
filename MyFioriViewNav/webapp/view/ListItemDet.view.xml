@@ -1,0 +1,19 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" controllerName="oft.fiori.controller.ListItemDet"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+			<Page title="Title">
+				<content>
+					<Button text="Back" press="onBack" icon="sap-icon://nav-back"/>
+					<form:SimpleForm>
+						<Label text="Name"/>
+						<Text text="{name}"/>
+						<Label text="City"/>
+						<Text text="{city}"/>
+						<Label text="Since When"/>
+						<Text text="{sinceWhen}"/>
+						<Label text="Country"/>
+						<Text text="{country}"/>
+					</form:SimpleForm>
+				</content>
+			</Page>
+			
+</mvc:View>

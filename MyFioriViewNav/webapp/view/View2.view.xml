@@ -1,0 +1,36 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="oft.fiori.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="View 2" showNavButton="true" navButtonPress="onBack">
+		<content>
+			<ObjectHeader title="{name}" intro="{benefit}" number="{price}" numberUnit="{unit}" icon="{photo}"></ObjectHeader>
+			<IconTabBar>
+				<items>
+					<IconTabFilter key="MoreInfo" text="More Info" icon="sap-icon://bullet-text" iconColor="Positive">
+						<content>
+							<core:Fragment fragmentName="oft.fiori.fragments.moreInfo" type="XML"></core:Fragment>
+						</content>
+					</IconTabFilter>
+					<IconTabFilter key="Supplier" text="Supplier" icon="sap-icon://supplier" >
+						<content>
+							<core:Fragment fragmentName="oft.fiori.fragments.suppliers" type="XML">
+								
+							</core:Fragment>
+						</content>
+					</IconTabFilter>
+					<IconTabFilter key="city" text="Cities" icon="sap-icon://home" >
+						<content>
+							
+						</content>
+					</IconTabFilter>					
+				</items>
+			</IconTabBar>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Approve" type="Accept" press="onPress"/>
+				<Button text="Reject" type="Reject"/>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>
